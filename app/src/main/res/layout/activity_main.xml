@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#191A1f">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <ImageButton
+            android:id="@+id/playerBtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/player_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="25dp"
+            android:text="Go to music player... It is totally controlled by voice..."
+            android:textColor="#8D8D8D"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_below="@+id/rl1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="111dp">
+
+        <com.alan.alansdk.button.AlanButton
+            android:id="@+id/alan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            app:button_horizontal_align="right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="172dp"
+        android:text="Nerd AI"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="25dp"
+        android:text="Chat with Nerd... Its really amazing..."
+        android:textColor="#8D8D8D"
+        android:textSize="13dp" />
+
+
+</RelativeLayout>
