@@ -35,7 +35,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     implementation 'com.karumi:dexter:6.2.3'
     implementation 'com.budiyev.android:code-scanner:2.1.1'
-    implementation "app.alan:sdk:4.+"
+    implementation "app.alan:sdk:4.26.0"
     testImplementation 'junit:junit:4.+'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
