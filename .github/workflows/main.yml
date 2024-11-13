@@ -18,6 +18,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
+        distribution: 'temurin'  # Set the JDK distribution
 
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
